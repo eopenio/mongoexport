@@ -142,11 +142,11 @@ func InitOption(conf ConfOpts) (Options, error) {
 	opts.AddOptions(inputOpts)
 	extraArgs := []string{}
 	opts.URI.LogUnsupportedOptions()
-	opts.ReadPreference, err = db.NewReadPreference(inputOpts.ReadPreference, opts.URI.ParsedConnString())
 	opts.Namespace.DB = conf.DB
 	opts.Namespace.Collection = conf.Collection
 	opts.URI.ConnectionString = conf.ConnectionString
 
+	opts.ReadPreference, err = db.NewReadPreference(inputOpts.ReadPreference, opts.URI.ParsedConnString())
 	if err != nil {
 		return Options{}, fmt.Errorf("error parsing --readPreference: %v", err)
 	}
