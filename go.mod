@@ -3,15 +3,15 @@ module github.com/eopenio/mongoexport
 go 1.19
 
 require (
-	github.com/mongodb/mongo-tools v0.0.0-20220819134731-aafd2ba1920c
-	go.mongodb.org/mongo-driver v1.10.2
+	github.com/mongodb/mongo-tools v0.0.0-20220518144857-c38653b7ae50
+	go.mongodb.org/mongo-driver v1.9.1
 )
 
 require (
+	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/golang/snappy v0.0.1 // indirect
 	github.com/jessevdk/go-flags v1.4.0 // indirect
 	github.com/klauspost/compress v1.13.6 // indirect
-	github.com/montanaflynn/stats v0.0.0-20171201202039-1bf9dbcd8cbe // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/smartystreets/goconvey v1.7.2 // indirect
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
